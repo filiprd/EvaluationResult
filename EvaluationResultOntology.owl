@@ -70,10 +70,7 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:AnnotationProperty rdf:about="&dc;title">
-        <rdfs:domain rdf:resource="&eval;EvaluationSubject"/>
-        <rdfs:domain rdf:resource="&eval;SubjectCategory"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
     
 
 
