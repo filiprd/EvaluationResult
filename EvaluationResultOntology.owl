@@ -37,6 +37,7 @@
         <vann:preferredNamespacePrefix>eval</vann:preferredNamespacePrefix>
         <terms:created>2015-07-29</terms:created>
         <vann:preferredNamespaceUri>http://purl.org/net/EvaluationResult#</vann:preferredNamespaceUri>
+        <dc:title>Evaluation Result Ontology</dc:title>
         <owl:versionInfo>1.0</owl:versionInfo>
         <dc:description>The Evaluation Result ontology is an ontology for describing evaluation results and related resources in a quality evaluation process.</dc:description>
         <rdfs:comment>Evaluation Result ontology is an ontology for representing information about results of a quality evaluation. </rdfs:comment>
@@ -70,8 +71,8 @@
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="&dc;title">
-        <rdfs:domain rdf:resource="http://purl.org/net/EvaluationResult#EvaluationSubject"/>
-        <rdfs:domain rdf:resource="http://purl.org/net/EvaluationResult#SubjectCategory"/>
+        <rdfs:domain rdf:resource="&eval;EvaluationSubject"/>
+        <rdfs:domain rdf:resource="&eval;SubjectCategory"/>
     </owl:AnnotationProperty>
     
 
@@ -234,7 +235,9 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:DatatypeProperty rdf:about="&dc;title"/>
+    <owl:DatatypeProperty rdf:about="&dc;title">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
     
 
 
